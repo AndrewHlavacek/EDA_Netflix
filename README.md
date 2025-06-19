@@ -2,9 +2,11 @@
 
 Welcome to the first addition to my data science portfolio — an **Exploratory Data Analysis (EDA)** of the [Netflix Dataset](https://www.kaggle.com/datasets/ariyoomotade/netflix-data-cleaning-analysis-and-visualization) from Kaggle.
 
+My goal throughout this project is to answer the question: **"What questions about Netflix content strategy can I answer with this dataset?”**
+
 Through this project, I demonstrate my ability to:
-- 🔴 **Clean and preprocess** real-world data  
-- 🔵 **Visualize** data to uncover patterns and insights  
+- 🔴 **Clean and preprocess** real-world data from **Kaggle**
+- 🔵 **Visualize** data to uncover patterns and insights in **Tableau** 
 
 ---
 
@@ -13,6 +15,7 @@ Through this project, I demonstrate my ability to:
 - **Jupyter Notebooks**  
 - **Python**: pandas, matplotlib, seaborn, plotly  
 - **Notebook environment**: VS Code / JupyterLab  
+- **Dashboarding Software**: Tableau Public
 
 ---
 
