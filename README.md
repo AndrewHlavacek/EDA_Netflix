@@ -4,6 +4,13 @@ Welcome to the first addition to my data science portfolio — an **Exploratory 
 
 My goal throughout this project is to answer the question: **"What questions about Netflix content strategy can I answer with this dataset?”**
 
+# My main takeaways from this casestudy / project were this:
+• 
+• 
+• 
+•
+• 
+
 Through this project, I demonstrate my ability to:
 - 🔴 **Clean and preprocess** real-world data from **Kaggle**
 - 🔵 **Visualize** data to uncover patterns and insights in **Tableau** 
