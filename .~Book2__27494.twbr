@@ -239,8 +239,8 @@
       <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
       <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
       <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
-      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='false' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/xz/p2ff3pyj7ld80r8bfv3x3lk40000gn/T/tableau-temp/#TableauTemp_0gh0pn10wv7g9v0zsyogq17b217n.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/xz/p2ff3pyj7ld80r8bfv3x3lk40000gn/T/tableau-temp/#TableauTemp_1ughcaa04toiiy18ufjae1yctif6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/25/2025 09:00:29 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -256,6 +256,7 @@
               <approx-count>8790</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>type</remote-name>
@@ -270,6 +271,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>title</remote-name>
@@ -284,6 +286,7 @@
               <approx-count>8450</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>director</remote-name>
@@ -298,6 +301,7 @@
               <approx-count>2668</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>country</remote-name>
@@ -312,6 +316,7 @@
               <approx-count>78</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>date_added</remote-name>
@@ -325,6 +330,7 @@
               <aggregation>Year</aggregation>
               <approx-count>1409</approx-count>
               <contains-null>true</contains-null>
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>release_year</remote-name>
@@ -338,6 +344,7 @@
               <aggregation>Sum</aggregation>
               <approx-count>76</approx-count>
               <contains-null>true</contains-null>
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>rating</remote-name>
@@ -352,6 +359,7 @@
               <approx-count>16</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>duration</remote-name>
@@ -366,6 +374,7 @@
               <approx-count>230</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>listed_in</remote-name>
@@ -380,6 +389,7 @@
               <approx-count>435</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[netflix1.csv_3CDCCF674A0A43ABBA87146E45527A7A]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -701,7 +711,7 @@
                   </zone-style>
                 </zone>
                 <zone h='21513' id='12' name='Sheet 3' w='27931' x='70965' y='36395'>
-                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />

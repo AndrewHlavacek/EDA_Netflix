@@ -17,6 +17,10 @@ Through this project, I demonstrate my ability to:
 
 ---
 
+![Netflix Dashboard](./tableaudash.png)
+
+
+
 ## 🛠 Tools & Environment
 
 - **Jupyter Notebooks**  
