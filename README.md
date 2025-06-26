@@ -21,9 +21,9 @@ Through this project, I demonstrate my ability to:
 
 ![Netflix Dashboard](./tableaudash.png)
 
-![Easy Viszuals]{./easy.png}
-![Medium Viszuals]{./medium.png}
-![Hard Viszuals]{./hard.png}
+! [Netflix Dashboard](./easy.png)
+![Medium Viszuals](./medium.png)
+![Hard Viszuals](./hard.png)
 
 
 
