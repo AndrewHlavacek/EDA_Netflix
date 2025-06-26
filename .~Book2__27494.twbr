@@ -240,7 +240,7 @@
       <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
       <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/xz/p2ff3pyj7ld80r8bfv3x3lk40000gn/T/tableau-temp/#TableauTemp_1ughcaa04toiiy18ufjae1yctif6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/25/2025 09:00:29 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/xz/p2ff3pyj7ld80r8bfv3x3lk40000gn/T/tableau-temp/#TableauTemp_0utw267054ono51a8wm0h15ukw7x.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/25/2025 09:25:20 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <metadata-records>
             <metadata-record class='column'>
@@ -477,8 +477,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1sigiq612of7cc13edzhp0mo0zzi].[Longitude (generated)]' field-type='quantitative' max='29732216.346712373' min='-15469584.700009463' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1sigiq612of7cc13edzhp0mo0zzi].[Latitude (generated)]' field-type='quantitative' max='18027429.807890367' min='-13829078.391907461' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1sigiq612of7cc13edzhp0mo0zzi].[Longitude (generated)]' field-type='quantitative' max='26663465.53908141' min='-11775721.194992304' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1sigiq612of7cc13edzhp0mo0zzi].[Latitude (generated)]' field-type='quantitative' max='16793827.511712462' min='-12916142.403236728' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='table'>
             <format attr='omit-on-special' field='[federated.1sigiq612of7cc13edzhp0mo0zzi].[none:country:nk]' value='false' />
@@ -631,7 +631,10 @@
             <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
             <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
           </datasource-dependencies>
-          <filter class='quantitative' column='[federated.1sigiq612of7cc13edzhp0mo0zzi].[none:release_year:qk]' included-values='all' />
+          <filter class='quantitative' column='[federated.1sigiq612of7cc13edzhp0mo0zzi].[none:release_year:qk]' included-values='in-range-or-null'>
+            <min>1925</min>
+            <max>2021</max>
+          </filter>
           <slices>
             <column>[federated.1sigiq612of7cc13edzhp0mo0zzi].[none:release_year:qk]</column>
           </slices>
@@ -658,6 +661,26 @@
         <cols />
       </table>
       <simple-id uuid='{6C520FAD-C4CE-48D7-8087-6ECD583CAC98}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{539A95BB-0FF6-4458-BDED-2506D19CC3CD}' />
     </worksheet>
   </worksheets>
   <dashboards>
@@ -711,7 +734,7 @@
                   </zone-style>
                 </zone>
                 <zone h='21513' id='12' name='Sheet 3' w='27931' x='70965' y='36395'>
-                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='43' type-h='cell' type-w='cell' />
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -962,7 +985,7 @@
       </cards>
       <simple-id uuid='{2AD42DE8-0EDC-4C9A-9631-A1096D51762B}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Sheet 1'>
           <zoom type='entire-view' />
@@ -975,8 +998,31 @@
         </viewpoint>
         <viewpoint name='Sheet 4' />
       </viewpoints>
-      <active id='21' />
+      <active id='20' />
       <simple-id uuid='{2A8F94AB-8774-4C19-973B-E625504F1108}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB9478CB-B383-4174-8E8B-77856846A724}' />
     </window>
   </windows>
 </workbook>
